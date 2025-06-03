@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: -moz-hidden-unscrollable;
+  }
+ 
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    height: 500px;
+  }
+  header {
+    background-color: #ebeef2;
+    color: rgb(11, 11, 11);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .logo-title {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    height: 80px;
+    margin-right: 15px;
+  }
+  header h1 {
+    font-size: 1.5rem;
+    
+  }
+  nav a {
+    color: rgb(3, 3, 3);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .hero {
+    text-align: center;
+    padding:  20px px 0; 
+    background: linear-gradient(to right, #170080f5, #0073e6);
+    color: rgb(252, 251, 251);
+    height: 180px;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 23px;
+  }
+  .btn {
+    background: white;
+    color: #004080;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    background-color: #e6e6e6;
+  }
+ /* Login Section Styling */
+/* Login page specific background image */
+/* Apply background only to login page */
+body.login-page {
+  background-image: url('ismt.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container to center form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Glassmorphic login form */
+.login-form {
+  background: rgba(255, 255, 255, 0.15); /* light transparent */
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  color: #fff; /* White text to pop on dark image bg */
+}
+
+/* Form elements */
+.login-form h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: 300;
+  color: #eee;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+
+.login-form input::placeholder {
+  color: #999;
+}
+
+/* Minimal button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(248, 74, 31, 0.85);
+  color: #faf8f8;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-form button:hover {
+  background: rgb(255, 255, 255);
+}
+
+  #error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .dashboard {
+    padding: 50px;
+    text-align: center;
+  }
+  /* Course Highlight Section */
+  .course-highlight {
+    background-color: white;
+    padding-top: -10px;    
+    text-align: center;
+    height: 300px;
+  }
+  .course-highlight img.course-banner {
+    width: 100%;
+    padding: 50px 10px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    height: 650px;
+    display: block;
+    
+  }
+  
+  .course-highlight img.course-banner:hover {
+    transform: scale(1.02);
+  }
+  
+ .course-highlight img{
+  width: 100%; /* Full width of the screen */
+    object-fit: cover; 
+    height: 300px;
+ }
+
+ .dashboard {
+  text-align: center;
+  padding: 20px 20px 50px; /* reduced top padding */
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9); /* Light gradient background */
+  font-family: 'Poppins', sans-serif;
+  height: 750px;
+}
+
+.dashboard h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #1a237e;
+  font-weight: 700;
+}
+
+.dashboard p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.dashboard img {
+  width: 100%;
+  max-width:2205px;
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+
+  footer {
+    text-align: center;
+    padding: 50px 20px;;
+    background-color: #333;
+    color: white;
+    height: 100px;
+  }
